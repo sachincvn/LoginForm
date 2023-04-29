@@ -57,7 +57,7 @@ h2{
 }
 
 input:focus ~ label,
-input:valid ~ label{
+input:not(:placeholder-shown) ~ label{
     top: -5px;
 }
 
