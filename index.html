@@ -1,48 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Login Form</title>
-</head>
-<body>
-    <section>
-        <div class="form-box">
-            <div class="form-value">
-                <form action="">
-                    <h2>LOGIN</h2>
-                    <div class="inputbox">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required placeholder="Email">
-                        <label for="email">Email</label>
-                    </div>
+  </head>
+  <body>
+    <div class="mainview">
 
-                    <div class="inputbox">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" required placeholder="Password">
-                        <label for="password">Password</label>
-                    </div>
+      <header class="header">
+        <nav class="navbar">
+          <a href="">Home</a>
+          <a href="">About Me</a>
+          <a href="">Contact</a>
+          <a href="">Skills</a>
+          <a href="">Projects</a>
+        </nav>
+      </header>
 
-                    <div class="forgot">
-                        <label for=""><input type="checkbox" name="" id="">Remember  <a href="">Forgot Passwrod</a>
-                        </label>
-                    </div>
+      <div class="container">
 
-                    <button>Login</button>
+        <div class="left-col">
+          <div class="logo">
+            <ion-icon name="flash-outline"></ion-icon>  
+            <h2>itschavan</h2>
+          </div>
 
-                    <div class="register">
-                       <p>Dont't have account ?
-                        <a href="">Register</a>       
-                    </p>
-                    </div>
-                </form>
-            </div>
+          <div class="home-text">
+            <h2>Welcome !</h2>
+            <h3>Hey, i am</h3>
+            <h2>Sachin Chavan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, earum voluptatibus! Voluptatibus repellat amet sapiente?</p>
+          </div>
+          
+          <div class="social-links">
+            <a href=""><ion-icon name="logo-github"></ion-icon></a>
+            <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+          </div>
         </div>
-    </section>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+        <!-- Form -->
+        <div class="right-col">
+          <div class="form-box">
+            <div class="form-value">
+              <form action="">
+                <h2>Sign In</h2>
+                <div class="inputbox">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <input type="email" required placeholder="Email" />
+                  <label for="email">Email</label>
+                </div>
+
+                <div class="inputbox">
+                  <ion-icon name="lock-closed-outline"></ion-icon>
+                  <input type="password" required placeholder="Password" />
+                  <label for="password">Password</label>
+                </div>
+
+                <div class="forgot">
+                  <label for=""
+                    ><input type="checkbox" name="" id="" />Remember
+                    <a href="">Forgot Passwrod</a>
+                  </label>
+                </div>
+
+                <button>Login</button>
+
+                <div class="register">
+                  <p>
+                    Dont't have account ?
+                    <a href="">Register</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
