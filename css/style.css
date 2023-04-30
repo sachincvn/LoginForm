@@ -84,21 +84,7 @@ body{
 }
 
 .menu{
-    position: absolute;
-    right: 0;
-    height: 30px;
-    width: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 20px;
-}
-
-.horizontal-line{
-    height: 2px;
-    background-color: #FFF;
-    width: 100x;
-    margin: 3px;
+    display: none;
 }
 .mainview .container{
     width: 100%;
@@ -299,5 +285,22 @@ button{
 @media screen and (max-width: 650px){
     .navbar{
         display: none;
+    }
+    .menu{
+        position: absolute;
+        right: 0;
+        height: 30px;
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 20px;
+    }
+    
+    .horizontal-line{
+        height: 2px;
+        background-color: #FFF;
+        width: 100x;
+        margin: 3px;
     }
 }
