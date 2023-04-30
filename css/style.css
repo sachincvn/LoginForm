@@ -73,19 +73,21 @@ body{
 }
 
 .logo h2{
-    font-size: 1.4em;
+    font-size: 1.6em;
     margin-right: 20px;
 }
 
 .logo ion-icon{
     margin-right: 4px;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight:bolder;
 }
 
-.menu{
+.menu,
+#nav-check{
     display: none;
 }
+
 .mainview .container{
     width: 100%;
     display: flex;
@@ -133,6 +135,12 @@ body{
 .welcome-text :nth-child(2){
     font-size: 1em;
     font-weight: 300;
+}
+
+.welcome-text :nth-child(4){
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: 200;
 }
 
 .about-text p{
@@ -297,10 +305,35 @@ button{
         margin-right: 20px;
     }
     
-    .horizontal-line{
-        height: 2px;
-        background-color: #FFF;
-        width: 100x;
-        margin: 3px;
+    .menu span{
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
     }
+
+      #nav-check:checked ~ .navbar{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        background-color: #333;
+        margin: -25px;
+        row-gap: 20px;
+        padding: 20px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+      }
+
+      #nav-check:checked ~ .navbar>:nth-child(1) {
+        margin-top: 10px;
+      }
+      #nav-check:checked ~ .menu{
+        position: absolute;
+        top: 0;
+        margin: 20px;
+      }
+      #nav-check:checked ~ .logo{
+        display: none;
+      }
 }
