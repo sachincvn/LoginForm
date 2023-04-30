@@ -21,9 +21,13 @@ body{
     background-color: transparent;
     padding: 25px 10%;
     display: flex;
+    align-items: center;
     z-index: 2;
 }
 
+.navbar{
+    display: flex;
+}
 .navbar a{
     position: relative;
     font-size: 16px;
@@ -70,12 +74,31 @@ body{
 
 .logo h2{
     font-size: 1.4em;
+    margin-right: 20px;
 }
 
 .logo ion-icon{
     margin-right: 4px;
     font-size: 1.5em;
     font-weight:bolder;
+}
+
+.menu{
+    position: absolute;
+    right: 0;
+    height: 30px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.horizontal-line{
+    height: 2px;
+    background-color: #FFF;
+    width: 100x;
+    margin: 3px;
 }
 .mainview .container{
     width: 100%;
@@ -93,9 +116,9 @@ body{
 .left-col{
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 40px;
     height: 80vh;
     padding: 10px 5px 5px 30px;
 }
@@ -109,33 +132,28 @@ body{
     height: 80vh;
 }
 
-.home-text{
+.welcome-text{
     display: flex;
     flex-direction: column;
     align-items: start;
     color: #FFF;
 }
 
-.home-text :nth-child(1){
+.welcome-text :nth-child(1){
     font-size: 1.6em;
     margin-bottom: 20px;
 }
 
-.home-text :nth-child(2){
+.welcome-text :nth-child(2){
     font-size: 1em;
     font-weight: 300;
 }
 
-.home-text :nth-child(3){
-    font-size: 2em;
+.about-text p{
+    color: #FFF;
+    font-size: 1em;
     font-weight: 500;
     margin-bottom: 10px;
-}
-
-.home-text :nth-child(4){
-    font-size: .9em;
-    font-weight: 400;
-    line-height: 20px;
 }
 
 .social-links a{
@@ -264,5 +282,22 @@ button{
 @media screen and (max-width: 860px){
     .container{
         flex-direction: column;
+    }
+
+    .header{
+        padding: 15px 5%;
+    }
+    .mainview .container{
+        margin: 0;
+        margin-top: 60px;
+        border-radius: 10px;
+        border: none;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .navbar{
+        display: none;
     }
 }
